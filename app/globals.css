@@ -2,26 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.active {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #5E8BFD 0%, rgba(154, 87, 240, 0.25) 100%);
+    box-shadow:
+        0px 0px 10px 0px rgba(255, 255, 255, 0.50),
+        inset 0 0 0 2px #FFF,
+        inset 0 0 0px rgba(255, 255, 255, 0.50);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fullstack {
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 54.5px;
+    background: linear-gradient(90deg, rgba(154, 87, 240, 0.22) 0.93%, #5E8BFD 100%);
+    filter: drop-shadow(0px 0px 10px rgba(154, 87, 240, 0.50));
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.divider {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 16px 0;
+}
+
+.cvbutton {
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: linear-gradient(180deg, #5e5e5e 0%, rgba(56, 56, 56, 0) 100%);
+}
+
+.photo {
+    flex-shrink: 0;
+    background: url('/public/selfie.jpeg'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.primary {
+    background: #9A57F0;
+}
+
+.technical {
+    background: #9A57F0;
+    box-shadow: 0px 0px 10px 0px rgba(154, 87, 240, 0.50);
+}
+
+.technical-2 {
+    background: #5E8BFD;
+    box-shadow: 0px 0px 10px 0px rgba(94, 139, 253, 0.50);
+}
+
+.secondary {
+    background: #0E0E0E;
+}
+
+.background {
+    background: #151416;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-non::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-non {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.figure-circle {
+    width: 1066px;
+    height: 999px;
+    flex-shrink: 0;
+    border-radius: 1066px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(94, 139, 253, 0.25) 0%, rgba(154, 87, 240, 0.00) 100%);
+}
+
+.figure-circle-2 {
+    width: 1156px;
+    height: 1083px;
+    flex-shrink: 0;
+    border-radius: 1156px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 152, 0.30) 0%, rgba(154, 87, 240, 0.00) 100%);
 }
