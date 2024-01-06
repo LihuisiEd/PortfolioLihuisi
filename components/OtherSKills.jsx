@@ -32,7 +32,7 @@ const OtherSkills = () => {
                         <div className=" bg-zinc-800 border border w-full p-8 border-zinc-700 rounded-b-lg shadow-lg">
                             <div>
 
-                                <div className="mb-2">Design</div>
+                                <div className="mb-2">Illustration</div>
                                 <div className="flex items-center">
                                     <div className="p-2 bg-zinc-700 rounded-lg w-18">
                                         100%
@@ -42,7 +42,7 @@ const OtherSkills = () => {
                                     </div>
                                 </div>
 
-                                <div className="my-2">Frontend</div>
+                                <div className="my-2">Animation</div>
                                 <div className="flex items-center">
                                     <div className="p-2 bg-zinc-700 rounded-lg w-18">
                                         90%
@@ -51,7 +51,7 @@ const OtherSkills = () => {
                                         <div className="technical-2 w-11/12 h-6 rounded-full"></div>
                                     </div>
                                 </div>
-                                <div className="my-2">Backend</div>
+                                <div className="my-2">Multimedia Editing</div>
                                 <div className="flex items-center">
                                     <div className="p-2 bg-zinc-700 rounded-lg w-18">
                                         80%

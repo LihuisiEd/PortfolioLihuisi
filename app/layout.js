@@ -20,45 +20,46 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body className={inter.className}>
-        <div className="flex">
-          <div className="w-96 h-screen">
-            <Navbar></Navbar>
-          </div>
-          <div className="relative background w-full overflow-hidden">
-            <div className="absolute -left-1/4 -top-4">
-              <svg width="888" height="537" viewBox="0 0 888 537" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="355" cy="37.5" rx="533" ry="499.5" fill="url(#paint0_radial_7_485)" fillOpacity="0.25" />
-                <defs>
-                  <radialGradient id="paint0_radial_7_485" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(355 37.5) rotate(90) scale(499.5 533)">
-                    <stop stopColor="#5E8BFD" />
-                    <stop offset="1" stopColor="#9A57F0" stopOpacity="0" />
-                  </radialGradient>
-                </defs>
-              </svg>
-            </div>
-            <div className="absolute inset-y-0  -right-2/4">
-                  <svg width="1156" height="1083" viewBox="0 0 1156 1083" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="578" cy="541.5" rx="578" ry="541.5" fill="url(#paint0_radial_7_486)" fillOpacity="0.3" />
-                    <defs>
-                      <radialGradient id="paint0_radial_7_486" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(578 541.5) rotate(90) scale(541.5 578)">
-                        <stop stopColor="#FF0098" />
-                        <stop offset="1" stopColor="#9A57F0" stopOpacity="0" />
-                      </radialGradient>
-                    </defs>
-                  </svg>
-                </div>
+  <div className="flex relative">
+    <div className="w-96 h-screen z-10"> {/* Aseguramos que este div tenga un z-index mayor */}
+      <Navbar />
+    </div>
 
-            <div className="w-screen container mx-auto pl-24 pr-56">
-              <div className="overflow-auto h-screen">
-                <Header></Header>
-                {children}
-              </div>
-            </div>
-          </div>
+    <div className="relative background w-full overflow-hidden z-1"> {/* Agregamos z-1 para que esté por encima de los SVGs */}
+      <div className="absolute -left-1/4 -top-4">
+        <svg width="888" height="537" viewBox="0 0 888 537" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="355" cy="37.5" rx="533" ry="499.5" fill="url(#paint0_radial_7_485)" fillOpacity="0.25" />
+          <defs>
+            <radialGradient id="paint0_radial_7_485" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(355 37.5) rotate(90) scale(499.5 533)">
+              <stop stopColor="#5E8BFD" />
+              <stop offset="1" stopColor="#9A57F0" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
 
+      <div className="absolute inset-y-0 -right-2/4">
+        <svg width="1156" height="1083" viewBox="0 0 1156 1083" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="578" cy="541.5" rx="578" ry="541.5" fill="url(#paint0_radial_7_486)" fillOpacity="0.3" />
+          <defs>
+            <radialGradient id="paint0_radial_7_486" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(578 541.5) rotate(90) scale(541.5 578)">
+              <stop stopColor="#FF0098" />
+              <stop offset="1" stopColor="#9A57F0" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
 
+      <div className="w-screen container mx-auto pl-24 pr-56 relative z-1"> {/* Aseguramos que este div tenga un z-index mayor */}
+        <div className="overflow-auto h-screen">
+          <Header />
+          {children}
         </div>
-      </body>
+      </div>
+    </div>
+  </div>
+</body>
+
     </html >
   )
 }
