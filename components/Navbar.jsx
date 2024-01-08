@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="absolute inset-0 p-8">
                 <div className="flex items-center justify-center h-full">
                     <nav className="flex flex-col w-full h-2/5 justify-evenly">
-                        <Link href="/" 
+                        <Link href="/"
                             className={`link ${pathname === '/' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
                             <div className="flex p-3 mx-4 ">
                                 {pathname === '/' ? (
@@ -103,7 +103,9 @@ export default function Navbar() {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="/posts">Posts</Link>
+                        <div className="absolute inset-x-0 bottom-0 transition ease-in-out hover:scale-105 mx-12 mb-4 bg-zinc-700 hover:bg-zinc-600 rounded-lg px-4 py-2">
+                            <Link href="/posts">Posts - Portfolio v2.0</Link>
+                        </div>
 
                     </nav>
                 </div>
