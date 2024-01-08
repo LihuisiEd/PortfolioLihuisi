@@ -13,10 +13,10 @@ export default function SocialMedia() {
                             <div className="flex flex-col items-center justify-center h-full">
                                 <div className="m-6">
                                     <Image
-                                        src='/linkedin-icon.svg'
+                                        src="/linkedin-icon.svg"
                                         width={70}
                                         height={70}
-                                        alt='LinkedIn'
+                                        alt="LinkedIn"
                                     />
                                 </div>
                                 <div >
