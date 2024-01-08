@@ -1,3 +1,4 @@
+import Subtitle from "./Subtitle"
 export default function MeCard() {
     return (
         <div className="mt-11 h-72">
@@ -7,11 +8,8 @@ export default function MeCard() {
                 </div>
                 <div className='relative flex flex-col justify-around px-10 w-3/4'>
                     <div className='w-full'>
-                        <div className='text-3xl font-light w-fit'>
-                            About me
-                            <hr className='py-4'/>
-                        </div>
-                        <div>
+                        <Subtitle>About me</Subtitle>
+                        <div className="cursor-default">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis debitis iure in. Voluptates possimus assumenda expedita atque ab saepe provident? Dignissimos, illo quibusdam. Eveniet, atque placeat! Tempora, omnis cumque!
                         </div>
                     </div>

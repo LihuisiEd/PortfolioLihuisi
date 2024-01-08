@@ -1,12 +1,12 @@
+import Subtitle from "./Subtitle"
+import Message from "./Message"
+
 export default function SocialMedia() {
     return (
-        <div className="flex justify-end text-white my-11">
+        <div className="flex justify-end  my-11">
             <div className="w-3/4  px-10">
-                <div className='text-3xl text-white font-light w-fit'>
-                    Social Media
-                    <hr className='py-6' />
-                </div>
-                <div className="flex justify-around ">
+                <Subtitle>Social Media</Subtitle>
+                <div className="flex gap-4">
                     <button className="transition ease-in-out hover:scale-105 duration-300  hover:shadow-lg rounded-lg hover:shadow-white/10 ">
                         <div className="transition ease-in-out bg-zinc-950 border border-zinc-700 rounded-lg hover:bg-gradient-to-b from-zinc-800 to-transparent w-52 h-52 hover:border-white">
                             <div className="flex flex-col items-center justify-center h-full">
@@ -57,6 +57,9 @@ export default function SocialMedia() {
                             </div>
                         </div>
                     </button>
+                </div>
+                <div className="mt-16">
+                    <Message>Hey! Thanks for scrolling ma' dude! :D</Message>
                 </div>
             </div>
         </div>

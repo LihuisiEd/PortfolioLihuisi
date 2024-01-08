@@ -9,12 +9,12 @@ const OtherSkills = () => {
     };
 
     return (
-        <div className="flex justify-end text-white mt-11">
+        <div className="flex justify-end  mt-11">
             <div className="w-3/4  px-10">
                 <div className="relative">
                     <button
                         onClick={toggleDropdown}
-                        className="bg-zinc-800 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline"
+                        className="transition ease-in-out duration-300 hover:bg-gradient-to-b hover:scale-105 from-zinc-700 to-transparent bg-zinc-900 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline hover:shadow-lg rounded-lg hover:shadow-white/10 hover:border-white"
                     >
                         Other Skills
                         {isOpen ? (
@@ -29,35 +29,35 @@ const OtherSkills = () => {
                     </button>
 
                     {isOpen && (
-                        <div className=" bg-zinc-800 border border w-full p-8 border-zinc-700 rounded-b-lg shadow-lg">
-                            <div>
+                        <div className=" bg-zinc-800 border border w-full p-8 mt-2  border-zinc-700 rounded-lg shadow-lg">
+                            <div className='cursor-default'>
 
                                 <div className="mb-2">Illustration</div>
                                 <div className="flex items-center">
-                                    <div className="p-2 bg-zinc-700 rounded-lg w-18">
+                                    <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         100%
                                     </div>
                                     <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="technical-2 w-full h-6 rounded-full"></div>
+                                        <div className="bg-blue-400 technical-2 w-full h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
 
                                 <div className="my-2">Animation</div>
                                 <div className="flex items-center">
-                                    <div className="p-2 bg-zinc-700 rounded-lg w-18">
+                                    <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         90%
                                     </div>
                                     <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="technical-2 w-11/12 h-6 rounded-full"></div>
+                                        <div className="bg-blue-400 technical-2 w-11/12 h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
                                 <div className="my-2">Multimedia Editing</div>
                                 <div className="flex items-center">
-                                    <div className="p-2 bg-zinc-700 rounded-lg w-18">
+                                    <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         80%
                                     </div>
                                     <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="technical-2 w-10/12 h-6 rounded-full"></div>
+                                        <div className="bg-blue-400 technical-2 w-10/12 h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
                             </div>

@@ -12,6 +12,10 @@
         inset 0 0 0px rgba(255, 255, 255, 0.50);
 }
 
+.active:hover {
+    background: linear-gradient(90deg, #69afff 0%, rgba(174, 112, 255, 0.30) 100%);
+}
+
 .fullstack {
     color: #FFF;
     text-align: center;
@@ -48,13 +52,19 @@
 }
 
 .technical {
-    background: #9A57F0;
-    box-shadow: 0px 0px 10px 0px rgba(154, 87, 240, 0.50);
+    box-shadow: 0px 0px 10px 0px rgba(164, 95, 254, 0.50);
+}
+
+.technical:hover {
+    box-shadow: 0px 0px 15px 0px rgba(164, 95, 254, 1.0);
 }
 
 .technical-2 {
-    background: #5E8BFD;
     box-shadow: 0px 0px 10px 0px rgba(94, 139, 253, 0.50);
+}
+
+.technical-2:hover {
+    box-shadow: 0px 0px 15px 0px rgba(94, 139, 253, 1);
 }
 
 .secondary {
@@ -114,4 +124,8 @@
     flex-shrink: 0;
     border-radius: 1156px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 152, 0.30) 0%, rgba(154, 87, 240, 0.00) 100%);
+}
+
+.card-height{
+    height: 500px;
 }

@@ -2,28 +2,20 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
-const navLinks = [
-    { path: '/', label: 'About me', icon: 'svg-for-about-me' },
-    { path: '/about', label: 'About', icon: 'svg-for-about' },
-    { path: '/contact', label: 'Contact', icon: 'svg-for-contact' },
-    { path: '/posts', label: 'Posts', icon: 'svg-for-posts' },
-];
-
-
 export default function Navbar() {
     const pathname = usePathname()
 
     return (
-        <div className="relative flex flex-col h-full bg-zinc-950 text-white p-8">
-            <div className=" text-xl flex justify-center  w-full">
+        <div className="relative flex flex-col h-full bg-zinc-950  p-8">
+            <div className=" text-xl flex justify-center items-center h-56  w-full">
                 <img src="/Portfolio-logo 1.png" />
             </div>
             <div className="absolute inset-0 p-8">
                 <div className="flex items-center justify-center h-full">
                     <nav className="flex flex-col w-full h-2/5 justify-evenly">
-                        <Link href="/"
-                            className={`link ${pathname === '/' ? 'active' : ''}`}>
-                            <div className="flex p-3 mx-4">
+                        <Link href="/" 
+                            className={`link ${pathname === '/' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
+                            <div className="flex p-3 mx-4 ">
                                 {pathname === '/' ? (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
                                         <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
@@ -33,14 +25,14 @@ export default function Navbar() {
                                         <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
                                     </svg>
                                 )}
-                                <div className="ml-2">
+                                <div className="ml-2 ">
                                     About me
                                 </div>
                             </div>
                         </Link>
 
                         <Link href="/projects"
-                            className={`link ${pathname === '/projects' ? 'active' : ''}`}>
+                            className={`link ${pathname === '/projects' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
                             <div className="flex p-3 mx-4">
                                 {pathname === '/projects' ? (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
@@ -58,8 +50,8 @@ export default function Navbar() {
                             </div>
                         </Link>
 
-                        <Link href="/posts"
-                            className={`link ${pathname === '/tech' ? 'active' : ''}`}>
+                        <Link href="/tech"
+                            className={`link ${pathname === '/tech' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
                             <div className="flex p-3 mx-4">
                                 {pathname === '/tech' ? (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brush-fill" viewBox="0 0 16 16">
@@ -77,7 +69,7 @@ export default function Navbar() {
                         </Link>
 
                         <Link href="/hobbies"
-                            className={`link ${pathname === '/hobbies' ? 'active' : ''}`}>
+                            className={`link ${pathname === '/hobbies' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
                             <div className="flex p-3 mx-4">
                                 {pathname === '/hobbies' ? (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
@@ -95,7 +87,7 @@ export default function Navbar() {
                         </Link>
 
                         <Link href="/contact"
-                            className={`link ${pathname === '/contact' ? 'active' : ''}`}>
+                            className={`link ${pathname === '/contact' ? 'active transition ease-in-out hover:scale-105' : 'transition ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-zinc-600 rounded-full'}`}>
                             <div className="flex p-3 mx-4">
                                 {pathname === '/contact' ? (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -111,6 +103,7 @@ export default function Navbar() {
                                 </div>
                             </div>
                         </Link>
+                        <Link href="/posts">Posts</Link>
 
                     </nav>
                 </div>
