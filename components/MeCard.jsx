@@ -2,7 +2,7 @@ import Subtitle from "./Subtitle"
 export default function MeCard() {
     return (
         <div className="mt-11 h-72">
-            <div className="flex text-white">
+            <div className="flex ">
                 <div className="w-1/4 aspect-w-1 aspect-h-1">
                     <img src="/selfie.jpeg" alt="Selfie" className="object-cover w-72 h-72 rounded-lg" />
                 </div>
