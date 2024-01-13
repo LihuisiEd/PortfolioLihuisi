@@ -2,7 +2,7 @@
 import Subtitle from "@/components/Subtitle"
 import Card from "@/components/Card"
 import { useEffect, useState } from 'react';
-import SkeletonLoader from "@/components/SkeletonLoader";
+import SkeletonLoader from "@/components/Skeletons/SkeletonLoader";
 import JavaScriptPortfolio from "@/components/JavaScriptPortfolio";
 import Message from "@/components/Message";
 import Link from "next/link";
@@ -51,7 +51,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="mt-11">
+        <div className="mt-11 pr-10">
             {isLoading ? (
                 <SkeletonLoader />
             ) : (

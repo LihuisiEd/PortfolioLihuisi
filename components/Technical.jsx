@@ -1,8 +1,8 @@
 import Subtitle from "./Subtitle"
 export default function Technical() {
     return (
-        <div className="flex justify-end  mt-11">
-            <div className="w-3/4  px-10">
+        <div className="flex sm:justify-end  mt-11">
+            <div className="sm:w-3/4 w-full  sm:px-10">
                 <Subtitle>Technical Skills</Subtitle>
                 <div className="cursor-default">
 

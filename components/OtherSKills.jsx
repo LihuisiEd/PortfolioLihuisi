@@ -9,12 +9,12 @@ const OtherSkills = () => {
     };
 
     return (
-        <div className="flex justify-end  mt-11">
-            <div className="w-3/4  px-10">
+        <div className="flex sm:justify-end  mt-11">
+            <div className="sm:w-3/4 w-full sm:px-10">
                 <div className="relative">
                     <button
                         onClick={toggleDropdown}
-                        className="transition ease-in-out duration-300 hover:bg-gradient-to-b hover:scale-105 from-zinc-700 to-transparent bg-zinc-900 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline hover:shadow-lg rounded-lg hover:shadow-white/10 hover:border-white"
+                        className="transition ease-in-out duration-300 hover:bg-gradient-to-b hover:scale-105 from-zinc-800 to-transparent bg-zinc-900 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline hover:shadow-lg rounded-lg hover:shadow-white/10 hover:border-white"
                     >
                         Other Skills
                         {isOpen ? (
@@ -29,7 +29,7 @@ const OtherSkills = () => {
                     </button>
 
                     {isOpen && (
-                        <div className=" bg-zinc-800 border border w-full p-8 mt-2  border-zinc-700 rounded-lg shadow-lg">
+                        <div className=" bg-zinc-900 border w-full p-8 mt-2  border-zinc-700 rounded-lg shadow-lg">
                             <div className='cursor-default'>
 
                                 <div className="mb-2">Illustration</div>

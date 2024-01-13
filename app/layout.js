@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Header from "@/components/Header"
+import MobileNavbar from "@/components/NavbarMobile";
 import { Inter } from "next/font/google";
 import './globals.css'
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className={inter.className}>
         <div className="flex relative text-white">
-          <div className="w-96 h-screen z-10">
+          <div className="hidden lg:block w-96 h-screen z-10">
             <Navbar />
           </div>
           <div className="relative background w-full overflow-hidden z-1">
@@ -49,10 +50,17 @@ export default function RootLayout({ children }) {
               </svg>
             </div>
 
-            <div className="w-screen container mx-auto pl-24 pr-16 relative z-1">
-              <div className="mr-60">
+            <div className="w-screen lg:container relative lg:mx-auto  lg:pl-24 relative z-1">
+              <div className="xl:mr-60">
                 <div className="overflow-auto h-screen">
-                  <Header />
+                  <div className="absolute inset-x-0 top-0">
+                    <MobileNavbar />
+                  </div>
+                  <div className="hidden lg:block mt-28 lb:mt-0">
+                    <Header />
+                  </div>
+
+
                   {children}
                 </div>
               </div>

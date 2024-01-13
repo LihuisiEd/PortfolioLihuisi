@@ -17,13 +17,13 @@ export default function Media() {
         },
     ]
     return (
-        <div className="flex justify-end  mt-11">
-            <div className="w-3/4  px-10">
+        <div className="flex sm:justify-end  mt-11">
+            <div className="sm:w-3/4 w-full  sm:px-10">
                 <div>
                     <Subtitle>Social media</Subtitle>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {mediaData.map((tech, index) => (
                         <CardTech key={index}>
                             {{

@@ -42,7 +42,7 @@
 
 .photo {
     flex-shrink: 0;
-    background: url('/public/selfie.jpeg'), lightgray 50% / cover no-repeat;
+    background: rgb(240, 240, 240) 50% / cover no-repeat;
     background-repeat: no-repeat;
     object-fit: cover;
 }
