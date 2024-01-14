@@ -7,11 +7,11 @@ export default function MeCard() {
                 <Header/>
             </div>
             <div className="sm:hidden w-full aspect-w-1 mb-11 sm:mb-0 aspect-h-1">
-                <img src="/Frame 5.png" alt="Selfie" className="object-cover w-full sm:w-2/4  rounded-lg photo border border-zinc-700" />
+                <img src="/Frame 5.png" alt="Selfie" className="object-cover w-full sm:w-2/4 bg-zinc-200 rounded-lg border border-zinc-700" />
             </div>
             <div className="flex">
                 <div className="w-1/4 aspect-w-1 aspect-h-1 hidden sm:block">
-                    <img src="/Frame 5.png" alt="Selfie" className="object-cover w-full h-full  rounded-lg photo border border-zinc-700" />
+                    <img src="/Frame 5.png" alt="Selfie" className="object-cover w-full h-full  rounded-lg bg-zinc-200 border border-zinc-700" />
                 </div>
                 <div className='relative flex flex-col justify-around lg:px-10 w-full sm:w-3/4'>
                     <div className='w-full sm:px-10 lg:px-0'>

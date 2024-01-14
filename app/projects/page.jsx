@@ -51,7 +51,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="mt-11 pr-10">
+        <div className="mt-28 lg:pr-10 mx-10 lg:mx-0">
             {isLoading ? (
                 <SkeletonLoader />
             ) : (
@@ -59,7 +59,7 @@ const Projects = () => {
                     <div>
                         <Subtitle>All my projects</Subtitle>
                     </div>
-                    <div className="grid gap-6 grid-cols-2">
+                    <div className="grid gap-6 sm:grid-cols-2 2xl:grid-cols-3 grid-cols-1">
                         {cardData.map((data, index) => (
                             <Card key={index}>
                                 {{
@@ -77,7 +77,7 @@ const Projects = () => {
                     <div className="mt-16">
                         <Subtitle>JavaScript Portfolio</Subtitle>
                     </div>
-                    <div className="description text-white w-1/2 mb-16">
+                    <div className="description text-white sm:w-1/2 w-full mb-16">
                         It arises as a way to practice Javascript; this has also opened doors to technologies like Tailwind and Next.js. Here, you will find some of the basic projects that only include pure HTML and JavaScript.
                     </div>
                     <JavaScriptPortfolio></JavaScriptPortfolio>

@@ -7,7 +7,7 @@ import TechBackend from "./TechsBackend";
 export default function TechGrid() {
 
     return (
-        <div className="mx-4 sm:mx-0 sm:mr-4">
+        <div className="lg:mr-4">
             <TechFrontend></TechFrontend>
             <TechBackend></TechBackend>
         </div>

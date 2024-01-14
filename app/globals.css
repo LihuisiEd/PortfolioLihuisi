@@ -40,13 +40,6 @@
     background: linear-gradient(180deg, #5e5e5e 0%, rgba(56, 56, 56, 0) 100%);
 }
 
-.photo {
-    flex-shrink: 0;
-    background: rgb(240, 240, 240) 50% / cover no-repeat;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
 .primary {
     background: #9A57F0;
 }
@@ -124,8 +117,4 @@
     flex-shrink: 0;
     border-radius: 1156px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 152, 0.30) 0%, rgba(154, 87, 240, 0.00) 100%);
-}
-
-.card-height{
-    height: 500px;
 }

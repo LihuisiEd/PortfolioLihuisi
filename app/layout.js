@@ -50,8 +50,8 @@ export default function RootLayout({ children }) {
               </svg>
             </div>
 
-            <div className="w-screen lg:container relative lg:mx-auto  lg:pl-24 relative z-1">
-              <div className="xl:mr-60">
+            <div className="w-screen lg:container relative lg:mx-auto  lg:pl-24 z-1">
+              <div className="xl:mr-32">
                 <div className="overflow-auto h-screen">
                   <div className="absolute inset-x-0 top-0">
                     <MobileNavbar />

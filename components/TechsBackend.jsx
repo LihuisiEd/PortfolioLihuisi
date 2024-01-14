@@ -48,30 +48,30 @@ export default function TechBackend() {
         },
     ];
     return (
-        <div className='bg-zinc-950/50 border border-zinc-700 rounded-lg mb-16'>
+        <div className='bg-zinc-950 border border-zinc-700 rounded-lg mb-11'>
             <div className="text-lg text-center w-full mt-6">Backend</div>
-            <div className="grid grid-cols-3 gap-6 my-16">
+            <div className="grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-3 gap-6 2xl:gap-6 my-6 mx-10">
                 {techs_backend.map((tech, index) => (
-                    <div key={index} className="flex">
+                    <div key={index} className="flex border relative border-zinc-700 pb-2 sm:pb-0 rounded-lg">
                         <div className="w-1/2  flex justify-center">
-                            <div className="relative self-center">
+                            <div className="self-center m-5 sm:m-4">
                                 <Image
                                     src={tech.svg}
-                                    width={96}
-                                    height={96}
+                                    width={84}
+                                    height={80}
                                     alt={tech.name}
                                 />
-                                <div className="absolute inset-0 w-24 h-24">
-                                    <div className="text-center py-8">
-                                        {tech.percentage}
-                                    </div>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
                         <div className="w-1/2">
-                            <div className="flex items-center h-full justify-start">
+                            <div className="flex items-center text-xs sm:text-base h-full justify-start">
                                 {tech.name}
+                            </div>
+                        </div>
+                        <div className="absolute bottom-0 sm:top-0 mb-2  w-1/2">
+                            <div className="text-center text-xs sm:text-base sm:py-11">
+                                {tech.percentage}
                             </div>
                         </div>
 

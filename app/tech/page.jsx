@@ -16,7 +16,7 @@ export default function Tech() {
         fetchData();
     }, []);
     return (
-        <div className="mt-11">
+        <div className="mx-10 lg:mx-0 mt-28 ">
             {isLoading ? (
                 <SkeletonTechs />
             ) : (
@@ -26,7 +26,7 @@ export default function Tech() {
                     <Subtitle>Other techs</Subtitle>
                     <OtherTechs></OtherTechs>
                 </div>
-            )},
+            )}
 
         </div>
     )
