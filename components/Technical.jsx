@@ -31,7 +31,7 @@ export default function Technical() {
                             80%
                         </div>
                         <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                            <div className="bg-purple-500 technical w-10/12 h-6 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
+                            <div className="bg-purple-500 technical w-11/12 h-6 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
                         </div>
                     </div>
 

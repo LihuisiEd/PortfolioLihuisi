@@ -1,14 +1,15 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 export default function Navbar() {
     const pathname = usePathname()
 
     return (
         <div className="relative flex flex-col h-full bg-zinc-950  p-8">
-            <div className=" text-xl flex justify-center items-center h-56  w-full">
-                <img src="/Portfolio-logo 1.png" />
+            <div className="text-xl flex justify-center items-center h-56 w-full">
+                
             </div>
             <div className="absolute inset-0 p-8">
                 <div className="flex items-center justify-center h-full">

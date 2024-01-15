@@ -21,32 +21,46 @@ const Projects = () => {
 
     const cardData = [
         {
-            title: 'Cifumiga',
-            chips: ['Kotlin', 'Django', 'Firebase'],
-        },
-        {
-            title: 'ToDoo',
-            chips: ['Next.js', 'Figma', 'MySQL'],
-        },
-        {
-            title: 'Hell-Merce',
-            chips: ['Next.js', 'API', 'MySQL'],
-        },
-        {
             title: 'Guardianes del Planeta Tierra',
             chips: ['Unity', 'C#'],
+            image: '/projects/guardianes-tiny.jpg',
+            href: 'https://github.com/joseph-leon/Juego-Unesco'
         },
         {
             title: 'System Recommendation',
             chips: ['Python', 'Dask', 'React', 'AWS', 'Docker', 'PostgreSQL'],
+            image: '/projects/system-recom-tiny.jpg',
+            href: 'https://github.com/ARamosA0/ms_courses_recom'
+        },
+        {
+            title: 'Hell-Merce',
+            chips: ['Next.js', 'API', 'MySQL'],
+            image: '/projects/hellmerce-tiny.jpg',
+            href: 'https://hell-mmerce.vercel.app/'
+        },
+        {
+            title: 'ToDoo',
+            chips: ['Next.js', 'Figma', 'MySQL'],
+            image: '/projects/todoo-tiny.jpg',
+            href: 'https://todoo-steel.vercel.app/'
+        },
+        {
+            title: 'Cifumiga',
+            chips: ['Kotlin', 'Django', 'Firebase'],
+            image: '/projects/cifumiga-tiny.jpg',
+            href: 'https://github.com/LihuisiEd/Cifumiga-proyecto'
         },
         {
             title: 'Task-Verse',
             chips: ['AWS', 'React-Native', 'RDS', 'Figma'],
+            image: '/projects/taskverse-tiny.jpg',
+            href: 'https://github.com/LihuisiEd/project-team'
         },
         {
             title: 'Automat',
             chips: ['React', 'Kotlin', 'MySQL', 'Django', 'LucidChart'],
+            image: '/projects/automat-tiny.jpg',
+            href: 'https://github.com/ARamosA0/projectoInegrador-S4'
         },
     ];
 
@@ -59,11 +73,13 @@ const Projects = () => {
                     <div>
                         <Subtitle>All my projects</Subtitle>
                     </div>
-                    <div className="grid gap-6 sm:grid-cols-2 2xl:grid-cols-3 grid-cols-1">
+                    <div className="grid gap-6 sm:grid-cols-2 grid-cols-1">
                         {cardData.map((data, index) => (
                             <Card key={index}>
                                 {{
                                     title: data.title,
+                                    image: data.image,
+                                    href: data.href,
                                     ...data.chips.reduce((acc, chip, chipIndex) => {
                                         acc[`chip${chipIndex + 1}`] = chip;
                                         return acc;

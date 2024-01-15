@@ -3,7 +3,7 @@ export default function SkeletonTechs() {
         <div>
             <div className='animate-pulse text-3xl  font-light w-fit cursor-default'>
                 <div className="h-10 w-28 bg-zinc-600 rounded-lg"></div>
-                <div className='animate-pulse py-6'> </div>
+                <div className='animate-pulse py-4'> </div>
             </div>
             <div className="lg:mr-4">
 

@@ -123,9 +123,6 @@ const MobileNavbar = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <div className="transition ease-in-out hover:scale-105 mx-12 mb-4 bg-zinc-700 hover:bg-zinc-600 rounded-lg px-4 py-2">
-                                    <Link href="/posts">Posts - Portfolio v2.0</Link>
-                                </div>
 
                             </nav>
                         </div>

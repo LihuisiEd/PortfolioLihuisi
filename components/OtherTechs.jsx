@@ -30,7 +30,7 @@ export default function OtherTechs() {
     ]
     return (
         <div>
-            <div className="grid grid-cols-4 gap-4 mx-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-4">
                 {other_techs.map((tech, index) => (
                     <CardTech key={index}>
                         {{

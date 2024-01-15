@@ -1,8 +1,8 @@
 const Subtitle = ({ children }) => {
     return (
-        <div className='text-3xl text-white font-light w-fit cursor-default'>
+        <div className='text-3xl text-white font-light w-fit pb-8 cursor-default'>
             {children}
-            <hr className='py-6' />
+            
         </div>
     );
 };

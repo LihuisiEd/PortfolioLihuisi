@@ -60,6 +60,10 @@ export default function TechBackend() {
                                     width={84}
                                     height={80}
                                     alt={tech.name}
+                                    className="transition-opacity opacity-0 duration-[2s] w-full"
+                                    onLoadingComplete={(image) =>
+                                        image.classList.remove("opacity-0")
+                                    }
                                 />
 
                             </div>
