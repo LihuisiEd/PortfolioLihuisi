@@ -1,11 +1,12 @@
-const SkeletonLoader = () => {
+import Subtitle from "../Subtitle";
+const SkeletonLoader = ({children}) => {
 
     const repeatedContent = [];
 
     for (let i = 0; i < 4; i++) {
         repeatedContent.push(
             <div key={i} className=" bg-zinc-950  border border-zinc-700 card-height rounded-lg animate-pulse">
-                <div className="h-60 lg:h-96 bg-zinc-600 w-full rounded-t-lg"></div>
+                <div className="h-60 lg:h-96  w-full rounded-t-lg"></div>
                 <div className="pb-4">
                     <div className="cursor-default">
                         <div className="my-4  w-full flex justify-center">
@@ -25,8 +26,7 @@ const SkeletonLoader = () => {
     return (
         <div>
             <div className=' text-3xl font-light w-fit cursor-default'>
-                <div className="h-10 w-60 bg-zinc-600 rounded-lg"></div>
-                <div className='py-4'> </div>
+                <Subtitle>{children}</Subtitle>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 grid-cols-1">
                 {repeatedContent}

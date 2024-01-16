@@ -2,7 +2,7 @@
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 function Loading() {
   return (
-    <div className='mt-20'>
+    <div className='h-screen flex justify-center items-center lg:items-start lg:mt-11'>
       <Player
         autoplay
         loop

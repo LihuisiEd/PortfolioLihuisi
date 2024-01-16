@@ -48,19 +48,19 @@ export default function TechBackend() {
         },
     ];
     return (
-        <div className='bg-zinc-950 border border-zinc-700 rounded-lg mb-11'>
-            <div className="text-lg text-center w-full mt-6">Backend</div>
-            <div className="grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-3 gap-6 2xl:gap-6 my-6 mx-10">
+        <div className='mb-11'>
+            <div className="text-lg text-center w-full">Backend</div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-3 gap-6 2xl:gap-6 my-6 sm:my-6 sm:mx-10">
                 {techs_backend.map((tech, index) => (
-                    <div key={index} className="flex border relative border-zinc-700 pb-2 sm:pb-0 rounded-lg">
+                    <div key={index} className="bg-zinc-900 flex border relative border-zinc-700 pb-2 sm:pb-0 rounded-lg transition duration-100 hover:bg-gradient-to-b from-zinc-700 to-transparent hover:border-white">
                         <div className="w-1/2  flex justify-center">
                             <div className="self-center m-5 sm:m-4">
                                 <Image
                                     src={tech.svg}
-                                    width={84}
-                                    height={80}
+                                    width={86}
+                                    height={86}
                                     alt={tech.name}
-                                    className="transition-opacity opacity-0 duration-[2s] w-full"
+                                    className="transition-opacity w-16 sm:w-full opacity-0 duration-[2s]"
                                     onLoadingComplete={(image) =>
                                         image.classList.remove("opacity-0")
                                     }
@@ -69,7 +69,7 @@ export default function TechBackend() {
                             </div>
                         </div>
                         <div className="w-1/2">
-                            <div className="flex items-center text-xs sm:text-base h-full justify-start">
+                            <div className="flex items-center text-xs sm:text-base h-full justify-start pr-4">
                                 {tech.name}
                             </div>
                         </div>

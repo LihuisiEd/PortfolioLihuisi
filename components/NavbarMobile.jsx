@@ -17,10 +17,10 @@ const MobileNavbar = () => {
     return (
         <div className="lg:hidden relative z-40">
             <button
-                className="absolute transition ease-in-out duration-75 p-4 right-0 top-0 "
+                className="absolute transition ease-in-out duration-75 m-5 right-0 top-0 "
                 onClick={toggleMenu}
             >
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 25" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 29 25" fill="none">
                     <path d="M1.03571 4.59184H27.9643C28.5363 4.59184 29 4.13501 29 3.57143V1.02041C29 0.456824 28.5363 0 27.9643 0H1.03571C0.463676 0 0 0.456824 0 1.02041V3.57143C0 4.13501 0.463676 4.59184 1.03571 4.59184ZM1.03571 14.7959H27.9643C28.5363 14.7959 29 14.3391 29 13.7755V11.2245C29 10.6609 28.5363 10.2041 27.9643 10.2041H1.03571C0.463676 10.2041 0 10.6609 0 11.2245V13.7755C0 14.3391 0.463676 14.7959 1.03571 14.7959ZM1.03571 25H27.9643C28.5363 25 29 24.5432 29 23.9796V21.4286C29 20.865 28.5363 20.4082 27.9643 20.4082H1.03571C0.463676 20.4082 0 20.865 0 21.4286V23.9796C0 24.5432 0.463676 25 1.03571 25Z" fill="white" />
                 </svg>
             </button>

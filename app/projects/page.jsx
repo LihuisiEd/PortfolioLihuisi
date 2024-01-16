@@ -65,9 +65,9 @@ const Projects = () => {
     ];
 
     return (
-        <div className="mt-28 lg:pr-10 mx-10 lg:mx-0">
+        <div className="mt-28 lg:pr-10 mx-5 lg:mx-0">
             {isLoading ? (
-                <SkeletonLoader />
+                <SkeletonLoader>All my projects</SkeletonLoader>
             ) : (
                 <div>
                     <div>

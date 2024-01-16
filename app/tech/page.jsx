@@ -16,7 +16,7 @@ export default function Tech() {
         fetchData();
     }, []);
     return (
-        <div className="mx-10 lg:mx-0 mt-28 ">
+        <div className="mx-5 lg:mx-0 mt-28 ">
             {isLoading ? (
                 <SkeletonTechs />
             ) : (

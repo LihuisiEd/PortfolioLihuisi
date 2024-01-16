@@ -14,7 +14,7 @@ const OtherSkills = () => {
                 <div className="relative">
                     <button
                         onClick={toggleDropdown}
-                        className="transition ease-in-out duration-300 hover:bg-gradient-to-b hover:scale-105 from-zinc-800 to-transparent bg-zinc-900 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline hover:shadow-lg rounded-lg hover:shadow-white/10 hover:border-white"
+                        className="transition ease-in-out duration-300 hover:bg-gradient-to-b hover:scale-105 from-zinc-700 to-transparent bg-zinc-900 border border-zinc-700 text-white p-6 text-lg rounded-lg focus:outline-none w-full text-left focus:shadow-outline hover:shadow-lg rounded-lg hover:shadow-white/10 hover:border-white"
                     >
                         Other Skills
                         {isOpen ? (
@@ -37,8 +37,8 @@ const OtherSkills = () => {
                                     <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         100%
                                     </div>
-                                    <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="bg-blue-400 technical-2 w-full h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
+                                    <div className="bg-zinc-950  w-full h-4 rounded-full ml-3" >
+                                        <div className="bg-blue-400 technical-2 w-full h-4 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
 
@@ -47,8 +47,8 @@ const OtherSkills = () => {
                                     <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         90%
                                     </div>
-                                    <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="bg-blue-400 technical-2 w-11/12 h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
+                                    <div className="bg-zinc-950  w-full h-4 rounded-full ml-3" >
+                                        <div className="bg-blue-400 technical-2 w-11/12 h-4 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
                                 <div className="my-2">Multimedia Editing</div>
@@ -56,8 +56,8 @@ const OtherSkills = () => {
                                     <div className="p-2 bg-zinc-700 rounded-lg w-16 text-center">
                                         80%
                                     </div>
-                                    <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                                        <div className="bg-blue-400 technical-2 w-10/12 h-6 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
+                                    <div className="bg-zinc-950  w-full h-4 rounded-full ml-3" >
+                                        <div className="bg-blue-400 technical-2 w-10/12 h-4 rounded-full transition ease-in-out  hover:bg-blue-300"></div>
                                     </div>
                                 </div>
                             </div>

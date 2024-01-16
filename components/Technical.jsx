@@ -11,8 +11,8 @@ export default function Technical() {
                         <div className="p-2 bg-zinc-800 rounded-lg w-16 text-center">
                             100%
                         </div>
-                        <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                            <div className="bg-purple-500 technical w-full h-6 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
+                        <div className="bg-zinc-900  w-full h-4 rounded-full ml-3" >
+                            <div className="bg-purple-500 technical w-full h-4 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
                         </div>
                     </div>
 
@@ -21,8 +21,8 @@ export default function Technical() {
                         <div className="p-2 bg-zinc-800 rounded-lg w-16 text-center">
                             90%
                         </div>
-                        <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                            <div className="bg-purple-500 technical w-11/12 h-6 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
+                        <div className="bg-zinc-900  w-full h-4 rounded-full ml-3" >
+                            <div className="bg-purple-500 technical w-11/12 h-4 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
                         </div>
                     </div>
                     <div className="my-2">Backend</div>
@@ -30,8 +30,8 @@ export default function Technical() {
                         <div className="p-2 bg-zinc-800 rounded-lg w-16 text-center">
                             80%
                         </div>
-                        <div className="secondary border border-zinc-700 w-full h-6 rounded-full ml-3" >
-                            <div className="bg-purple-500 technical w-11/12 h-6 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
+                        <div className="bg-zinc-900  w-full h-4 rounded-full ml-3" >
+                            <div className="bg-purple-500 technical w-11/12 h-4 rounded-full transition ease-in-out  hover:bg-purple-300"></div>
                         </div>
                     </div>
 

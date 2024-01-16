@@ -1,7 +1,7 @@
 'use client'
 import Subtitle from "@/components/Subtitle"
 import HobbieGrid from "@/components/HobbieGrid"
-import SkeletonHobbie from "@/components/Skeletons/SkeletonHobbie"
+import SkeletonLoader from "@/components/Skeletons/SkeletonLoader"
 import Message from "@/components/Message"
 import { useEffect, useState } from 'react';
 import Link from "next/link"
@@ -17,23 +17,23 @@ export default function Hobbies() {
         fetchData();
     }, []);
     return (
-        <div className="mx-10 lg:mx-0 mt-28">
+        <div className="mt-28 lg:pr-10 mx-5 lg:mx-0">
             {isLoading ? (
-                <SkeletonHobbie />
+                <SkeletonLoader>Hobbies</SkeletonLoader>
             ) : (
                 <div>
                     <Subtitle>Hobbies</Subtitle>
                     <HobbieGrid></HobbieGrid>
 
                     <div className="bg-zinc-950 border border-zinc-700 mt-11  rounded-lg">
-                        <div className="flex flex-col h-36 justify-evenly items-center">
+                        <div className="flex flex-col h-36 px-4 text-center justify-evenly items-center">
                             <div>
                                 You can check out my Illustrator portfolio
                             </div>
                             <div>
-                                <button className="fullstack w-fit py-3 px-6">
+                                <button className="fullstack w-fit py-3 px-6 hover:border hover:border-white transition ease-in-out hover:scale-105 duration-300">
                                     <a href="https://eduardolihuisi.carrd.co/" target="blank">
-                                        https://eduardolihuisi.carrd.co
+                                        My Portfolio
                                     </a>
                                 </button>
                             </div>

@@ -4,7 +4,7 @@ import CardTech from "./CardTech"
 export default function OtherTechs() {
     const other_techs = [
         {
-            title: 'Jetpack Compose',
+            title: 'Jetpack',
             svg: '/techs/jetpackcompose.svg'
         },
         {
@@ -27,10 +27,11 @@ export default function OtherTechs() {
             title: 'MongoDB',
             svg: '/techs/mongodb-icon.svg'
         },
+
     ]
     return (
         <div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:mx-10">
                 {other_techs.map((tech, index) => (
                     <CardTech key={index}>
                         {{

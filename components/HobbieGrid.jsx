@@ -7,18 +7,22 @@ export default function HobbieGrid() {
         {
             title: 'Animation',
             chips: ['Krita', 'OpenToonz', 'LottieFiles', 'After Effects', 'Animate', 'Illustrator'],
+            image: '/hobbies/animation.jpg'
         },
         {
             title: 'Branding Designer',
             chips: ['Illustrator', 'Photoshop', 'AdobeColor'],
+            image: '/hobbies/branding.jpg'
         },
         {
             title: 'Character Designer',
             chips: ['Illustrator', 'Krita', 'Photoshop'],
+            image: '/hobbies/character-design.jpg'
         },
         {
             title: 'Digital Artist',
             chips: ['MediaBang', 'Krita', 'Photoshop'],
+            image: '/hobbies/illustration.jpg'
         },
     ];
 
@@ -28,6 +32,7 @@ export default function HobbieGrid() {
                 <Card key={index}>
                     {{
                         title: data.title,
+                        image: data.image,
                         ...data.chips.reduce((acc, chip, chipIndex) => {
                             acc[`chip${chipIndex + 1}`] = chip;
                             return acc;

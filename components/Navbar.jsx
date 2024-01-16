@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+import Image from "next/image";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
     return (
         <div className="relative flex flex-col h-full bg-zinc-950  p-8">
             <div className="text-xl flex justify-center items-center h-56 w-full">
-                
+                <img src="favicon.svg" className="w-30"/>
             </div>
             <div className="absolute inset-0 p-8">
                 <div className="flex items-center justify-center h-full">
@@ -104,10 +105,6 @@ export default function Navbar() {
                                 </div>
                             </div>
                         </Link>
-                        <div className="absolute inset-x-0 bottom-0 transition ease-in-out hover:scale-105 mx-12 mb-4 bg-zinc-700 hover:bg-zinc-600 rounded-lg px-4 py-2">
-                            <Link href="/posts">Posts - Portfolio v2.0</Link>
-                        </div>
-
                     </nav>
                 </div>
 

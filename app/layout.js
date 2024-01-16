@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <Navbar />
           </div>
           <div className="relative background w-full overflow-hidden z-1">
-            <div className="absolute -left-1/4 -top-4">
+            <div className="absolute -left-2/3 sm:-left-1/3 -top-36">
               <svg width="888" height="537" viewBox="0 0 888 537" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="355" cy="37.5" rx="533" ry="499.5" fill="url(#paint0_radial_7_485)" fillOpacity="0.25" />
                 <defs>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               </svg>
             </div>
 
-            <div className="absolute inset-y-0 -right-2/4">
+            <div className="absolute inset-y-0  sm:-right-3/4">
               <svg width="1156" height="1083" viewBox="0 0 1156 1083" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="578" cy="541.5" rx="578" ry="541.5" fill="url(#paint0_radial_7_486)" fillOpacity="0.3" />
                 <defs>
