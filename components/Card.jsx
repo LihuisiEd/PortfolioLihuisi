@@ -5,7 +5,7 @@ export default function Card({ children }) {
 
     return (
         <div className="bg-zinc-950 card-height border border-zinc-700 rounded-lg">
-            <a href={href} target="blank" className="brightness-50 hover:brightness-100 transition duration-300">
+            <a href={href} target="blank" className="lg:brightness-50 hover:brightness-100 transition duration-300">
                 <div className="h-60 xl:h-96 bg-cover rounded-t-lg overflow-hidden">
                     <Image
                         src={image}

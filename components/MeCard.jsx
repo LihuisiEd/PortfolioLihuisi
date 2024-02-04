@@ -24,7 +24,7 @@ export default function MeCard() {
                     </div>
 
                     <div className="sm:mx-10 lg:mx-0 mt-4">
-                        <a href="https://www.linkedin.com/in/eduardo-lihuisi-476520222/overlay/1704989099986/single-media-viewer/?profileId=ACoAADf2QJoBHpsMsKjfLdFbSXdItngzkvwoPEs" target="blank">
+                        <a href="https://www.linkedin.com/in/eduardo-lihuisi-476520222/overlay/1707089978080/single-media-viewer/?profileId=ACoAADf2QJoBHpsMsKjfLdFbSXdItngzkvwoPEs" target="blank">
                             <button className='transition ease-in-out hover:scale-105 duration-300 border-zinc-700 hover:bg-gradient-to-b from-zinc-800 to-transparent hover:border-white  bg-zinc-950 border-2 rounded-lg hover:shadow-lg w-64 hover:shadow-white/10 py-3 px-6'>My CV</button>
                         </a>
                     </div>
