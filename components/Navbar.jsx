@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <div className="relative flex flex-col h-full bg-zinc-950  p-8">
             <div className="text-xl flex justify-center items-center h-56 w-full">
-                bg-repeat-x bg-center
+                <img src="favicon.svg" className="w-30" />
             </div>
             <div className="absolute inset-0 p-8">
                 <div className="flex items-center justify-center h-full">
